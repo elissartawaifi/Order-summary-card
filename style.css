@@ -1,0 +1,162 @@
+:root{
+
+
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    
+
+    
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--desaturated-blue);
+}
+
+body{
+    background-image: url("images/pattern-background-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    font-size: 16px;
+    font-family:  'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size:  1.3rem ;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+h2{
+    font-size:  .9rem ;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+p{
+    font-size: 1rem;
+    font-weight:400 ;
+}
+a{
+    font-size: 0.9rem;
+    color: var(--bright-blue);
+    font-weight:700 ;
+    
+}
+
+.card{
+    border-radius: 20px;
+    display: block;
+    background-color:white;
+
+    width: 90vw;
+    max-width:400px;
+    max-height: 900px;
+
+    margin: 10vh auto;
+    
+   
+}
+
+
+.card .header img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+   
+}
+
+.card .body{
+    padding-inline: 30px ;
+    padding-block: 15px;
+}
+
+
+
+.card .text h1{
+    padding-block: 10px;
+}
+
+.card .text p{
+    padding-block: 10px;
+    line-height: 1.5rem;
+}
+
+.card .plan {
+    width: 100%;
+    padding-block: 20px;
+    padding-inline: 15px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.card .plan .itema{
+    display: flex;
+    
+}
+.card .plan .item2{
+    line-height: 1.5rem;
+    padding-inline: 10px;
+}
+
+
+.card .plan .itemb{
+    padding: 15px 0;
+}
+
+button{
+    
+    width: 100%;
+    padding-block: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: 900;
+   
+}
+
+.card .cancel{
+    font-size:  .9rem ;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    
+}
+
+.card a:hover , .card button:hover , .card .cancel:hover{
+    cursor: pointer;
+}
+
+.card a:active{
+    color: var(--desaturated-blue);
+}
+
+.card button:active{
+    background-color: var(--desaturated-blue);
+    
+}
+
+.card .cancel:active{
+    color: var(--dark-blue);
+}
+
+@media screen and (min-width:1280px){
+    body{
+        background-image: url("images/pattern-background-desktop.svg");
+    }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
